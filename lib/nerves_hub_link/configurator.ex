@@ -67,11 +67,7 @@ defmodule NervesHubLink.Configurator do
   end
 
   defp fetch_default() do
-    if Code.ensure_loaded?(NervesKey) do
-      NervesHubLink.Configurator.NervesKey
-    else
       Default
-    end
   end
 
   defp fwup_version do
